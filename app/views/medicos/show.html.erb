@@ -25,6 +25,28 @@
   <%= @medico.crm %>
 </p>
 
+<table>
+  <h2>Consultas agendadas</h2>
+  <thead>
+  <tr>
+    <th>Hora</th>
+    <th>Data</th>
+    <th>Paciente</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @medico.consultums.each do |consultum| %>
+    <tr>
+      <td><%= consultum.hora %></td>
+      <td><%= consultum.data %></td>
+      <td><%= consultum.paciente.nome %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
 
 <%= link_to 'Edit', edit_medico_path(@medico) %> |
 <%= link_to 'Back', medicos_path %>
