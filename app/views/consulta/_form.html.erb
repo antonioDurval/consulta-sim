@@ -11,16 +11,16 @@
     </div>
   <% end %>
 
-
   <div class="field">
     <%= form.label :paciente %>
-    CPF:
-    <%= collection_select(:consultum, :paciente_id, Paciente.all, :id, :cpf) %>
+    <%= collection_select(:consultum, :paciente_id, Paciente.all, :id, :nome) %>
   </div>
+
   <div class="field">
     <%= form.label :medico %>
     <%= collection_select(:consultum, :medico_id, Medico.all, :id, :nome) %>
   </div>
+
   <div class="field">
     <%= form.label :hora %>
     <%= form.text_field :hora %>
