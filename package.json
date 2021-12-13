@@ -1,5 +1,5 @@
 {
-  "name": "engsoft11",
+  "name": "consulta-sim",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
