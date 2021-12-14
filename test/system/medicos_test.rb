@@ -18,6 +18,7 @@ class MedicosTest < ApplicationSystemTestCase
     fill_in "Crm", with: @medico.crm
     fill_in "Email", with: @medico.email
     fill_in "Especialidade", with: @medico.especialidade
+    fill_in "Nome", with: @medico.nome
     click_on "Create Medico"
 
     assert_text "Medico was successfully created"
@@ -32,6 +33,7 @@ class MedicosTest < ApplicationSystemTestCase
     fill_in "Crm", with: @medico.crm
     fill_in "Email", with: @medico.email
     fill_in "Especialidade", with: @medico.especialidade
+    fill_in "Nome", with: @medico.nome
     click_on "Update Medico"
 
     assert_text "Medico was successfully updated"

@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_12_14_001431) do
   end
 
   create_table "medicos", force: :cascade do |t|
+    t.string "nome"
     t.string "cpf"
     t.string "email"
     t.string "especialidade"
