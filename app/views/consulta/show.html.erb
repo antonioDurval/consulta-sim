@@ -12,12 +12,12 @@
 
 <p>
   <strong>Medico:</strong>
-  <%= @consultum.medico_id %>
+  <%= Medico.find(@consultum.medico_id).nome %>
 </p>
 
 <p>
   <strong>Paciente:</strong>
-  <%= @consultum.paciente_id %>
+  <%= Paciente.find(@consultum.paciente_id).nome %>
 </p>
 
 <%= link_to 'Edit', edit_consultum_path(@consultum) %> |
