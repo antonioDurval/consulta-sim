@@ -1,3 +1,3 @@
 class Paciente < ApplicationRecord
-  has_one :endereco
+  has_one :endereco, dependent: :destroy
 end
