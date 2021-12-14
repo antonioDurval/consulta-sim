@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :consulta
   resources :medicos
   get 'welcome/index'
   root 'welcome#index'
